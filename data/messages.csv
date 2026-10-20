@@ -1,0 +1,16 @@
+id,role,content,language_id
+1,user,Hello,1
+2,assistant,"Hallo! Schön, dass du da bist. Wie kann ich dir auf Deutsch helfen? (Hello! Nice that you’re here. How can I help you in German?)",1
+3,user,Say hello to your mother for me,1
+4,assistant,"You can say:
+
+**Grüß deine Mutter von mir.**  
+*(Say hello to your mother for me.)*
+
+Also possible:
+**Sag deiner Mutter schöne Grüße von mir.**  
+*(Tell your mother I send my regards.)*
+
+Gut gemacht — willst du eine formelle Version auch? *(Well done — do you also want a formal version?)*",1
+5,user,Hello,2
+6,assistant,Ahoy! How be ye? (Hello! How are you?),2
