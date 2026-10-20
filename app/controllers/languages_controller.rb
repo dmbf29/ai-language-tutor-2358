@@ -38,4 +38,14 @@ class LanguagesController
     messages_controller = MessagesController.new(@message_repository, language)
     MessageRouter.new(messages_controller).run
   end
+
+  def delete
+    # get all the languages from the repository
+    languages = @language_repository.all
+    # give the languages to the view to display
+    @language_view.display_languages(languages)
+    # have the view ask the user to choose
+    index = @language_view.ask_for_index
+    @language_repository.destroy(index)
+  end
 end

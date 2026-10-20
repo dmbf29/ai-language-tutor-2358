@@ -18,7 +18,8 @@ class LanguageRouter
     case action
     when 1 then @languages_controller.list
     when 2 then @languages_controller.add
-    when 3 then @languages_controller.learn
+    when 3 then @languages_controller.delete
+    when 4 then @languages_controller.learn
     when 0 then stop
     else
       puts "Please press 1, 2, 3 or 0"
@@ -36,7 +37,8 @@ class LanguageRouter
     puts "--------------------"
     puts "1. List my languages"
     puts "2. Add a language"
-    puts "3. Learn a language"
+    puts "3. Delete a language"
+    puts "4. Learn a language"
     puts "0. Stop and exit"
     print "> "
   end

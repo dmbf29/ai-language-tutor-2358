@@ -23,6 +23,10 @@ class LanguageRepository
     end
   end
 
+  def destroy(index)
+    @languages.delete_at(index)
+  end
+
   private
 
   def save_csv
